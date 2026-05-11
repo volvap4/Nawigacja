@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Nawigacja.Koordynaty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Nawigacja"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="66,62,0,0" TextWrapping="Wrap" Text="koordynaty" VerticalAlignment="Top" Height="81" Width="388" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="374,220,0,0" TextWrapping="Wrap" Text="GPS: Moje położenie" VerticalAlignment="Top" Height="81" Width="728" FontSize="48" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="491,452,0,0" TextWrapping="Wrap" Text="Podaj adres celu" VerticalAlignment="Top" Height="74" Width="506" FontSize="36" TextAlignment="Center"/>
+        <TextBox x:ConnectionId='2' x:Name="txAdres" HorizontalAlignment="Center" Margin="0,505,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Height="68" FontSize="24"/>
+        <StackPanel Width="400" Height="201" Margin="550,634,550,165" Background="#FF8DECB6">
+            <TextBlock TextWrapping="Wrap" Text="Wyznaczone współrzędne geograficzne:" HorizontalAlignment="Center" Margin="-2,30,0,0" FontSize="16" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='6' x:Name="tbDlg" TextWrapping="Wrap" Text="Długość geograficzna: " FontSize="16" HorizontalAlignment="Left" Margin="23,20,0,0"/>
+            <TextBlock x:ConnectionId='7' x:Name="tbSzer" TextWrapping="Wrap" Text="Szerokość geograficzna: " FontSize="16" HorizontalAlignment="Left" Margin="10,15,0,0"/>
+        </StackPanel>
+
+        <StackPanel Width="876" Height="60" Margin="302,289,322,651" Background="#FF8DECB6">
+            <TextBlock x:ConnectionId='5' x:Name="tbGPS" HorizontalAlignment="Left" TextWrapping="Wrap" Text="***" Height="58" Width="875" FontSize="16" TextAlignment="Center" Foreground="#FFF70606"/>
+        </StackPanel>
+        <Button x:ConnectionId='3' x:Name="Powrot" Content="Mapa" Margin="0,950,0,0" VerticalAlignment="Top" Width="84" Background="{x:Null}" Height="50" FontSize="18"                     />
+        <Button x:ConnectionId='4' x:Name="Szukaj" Content="Szukaj" Margin="1406,950,0,0" VerticalAlignment="Top" Width="84" Background="{x:Null}" Height="50" FontSize="18"                     />
+
+    </Grid>
+</Page>
+
